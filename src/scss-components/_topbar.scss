@@ -1,0 +1,25 @@
+@use '../scss/custom'as *;
+
+
+li {
+    padding: 0 0.7rem;
+
+    a {
+        color: $white !important;
+        text-transform: capitalize;
+        font-weight: 600;
+
+        &:hover {
+
+
+            color: $primary !important;
+        }
+    }
+}
+
+.sec-nav{
+
+   @include media-breakpoint-down(lg){
+       flex-direction: row;
+   }
+}

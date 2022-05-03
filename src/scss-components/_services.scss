@@ -1,0 +1,24 @@
+@use '../scss/custom' as *;
+
+#secondary{
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 0;
+    }
+}
+
+#para{
+    @include media-breakpoint-down(md) {
+        width: 85%;
+    }
+}
+#card{
+
+    @include media-breakpoint-down(sm) {
+       &:hover{
+           transform: none;
+           cursor: default;
+           transition: none;
+       }
+    }
+}

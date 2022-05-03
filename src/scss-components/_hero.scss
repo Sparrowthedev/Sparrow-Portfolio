@@ -1,0 +1,26 @@
+@use '../scss/custom'as *;
+
+.sec-div {
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+
+
+
+#title {
+    @include media-breakpoint-down(md) {
+        font-size: 2rem;
+    }
+}
+#maxheight {
+
+    @media screen and (max-height: 480px){
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+};
+
