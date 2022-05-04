@@ -73,10 +73,9 @@ const Name = styled.div`
 color: #fff;
 font-weight: 600;
 `
-const Handle = styled.div`
-font-size: 0.9rem;
-font-weight: 200;
+const Handle = styled.p`
 color:  #d4d2d2;
+font-weight: 300;
 `
 const Ratings = styled.div`
 
@@ -86,8 +85,7 @@ flex: 2;
 `
 const Desc = styled.div`
 color:  #d4d2d2;
-font-size: 0.9em;
-font-weight: 200;
+font-weight: 400;
 
 @media (max-width: 368px){
     text-align: center;

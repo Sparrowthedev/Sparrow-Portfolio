@@ -18,7 +18,7 @@ export const Testimonials = [
         alt: 'man pic',
         userName: 'Tyler Mich',
         userHandle: '@tylermich',
-        Desc: "Fast and efficient delivery!! submitted the project before the deadling with no flaws, you can trust him to be perfect",
+        Desc: "Fast and efficient delivery!! submitted the project before the deadline with no flaws, you can trust him to be perfect",
     },
     {
         img: 'https://randomuser.me/api/portraits/med/women/64.jpg',

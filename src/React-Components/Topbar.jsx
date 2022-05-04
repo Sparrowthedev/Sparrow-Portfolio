@@ -223,7 +223,7 @@ const Topbar = ({ setMenuOpen, menuOpen }) => {
                             <Link className="nav-link" href="https://sparrowthedev.github.io"> <Githubicon />Github</Link>
                         </Li>
 
-                       <Link href='mailto:fridayogwuche61@gmail.com' target='blank'>
+                       <Link href='mailto:sparrowthedev@gmail.com' target='blank'>
                        <EmailDiv className='shadow-lg'>
                             <Emailicon />
                         </EmailDiv>
