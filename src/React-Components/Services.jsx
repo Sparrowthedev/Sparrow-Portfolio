@@ -24,6 +24,7 @@ const Italic = styled.i``
 const Link = styled.a``
 const Section = styled.div`
     padding: 3rem 0 1rem 0;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     background: #262525;
@@ -113,7 +114,7 @@ const Section = styled.div`
 
 const Services = () => {
     return (
-        <Section>
+        <Section id='services'>
             <Div className='container'>
                 <Row className='row align-items-center'>
                     <Col className='col-lg-6'>

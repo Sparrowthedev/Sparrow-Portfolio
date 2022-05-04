@@ -5,6 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import { primaryColor, secondaryColor, white } from '../variables';
+import { useWindowScrollPositions } from '../useWindowScrollPositions'
 
 const Container = styled.div``
 const Logo = styled.a``
@@ -24,7 +25,6 @@ const Span = styled.span``
 
 
 const Nav = styled.nav`
-   background: ${secondaryColor};  
 
   ${Container}{
 
@@ -36,7 +36,11 @@ const Nav = styled.nav`
         justify-content: space-between;
         cursor: pointer;
         border: none;
-        background: ${secondaryColor};
+        background-color: transparent;
+
+        @media (min-width: 991px){
+            display:none;
+        }
         
 
 
@@ -137,6 +141,9 @@ const Nav = styled.nav`
 
 
             ${Li}{
+                &.border{
+                    border-bottom: 2px solid ${primaryColor};
+                }
             
                 ${Link}{
                     display: flex;
@@ -171,12 +178,10 @@ const Nav = styled.nav`
 `
 
 
-
-
-const Topbar = ({setMenuOpen, menuOpen}) => {
-
+const Topbar = ({ setMenuOpen, menuOpen }) => {
+    const { scrollY } = useWindowScrollPositions()
     return (
-        <Nav className="navbar navbar-expand-lg navbar-light menu">
+        <Nav className={`${scrollY > 508 ? "navbar navbar-expand-lg navbar-light fixed-top bg-secondary" : 'navbar navbar-expand-lg navbar-light bg-dark'}`}>
             <Container className="container">
                 <Logo className="navbar-brand" href="#home">
                     <ImgDiv>
@@ -185,11 +190,10 @@ const Topbar = ({setMenuOpen, menuOpen}) => {
                     </ImgDiv>
                 </Logo>
 
-                <Button className={`${menuOpen ? 'active' : 'd-lg-none'}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                 onClick={() => setMenuOpen(!menuOpen)}>
-                <Span ></Span>
-                <Span ></Span>
-                <Span ></Span>
+                <Button className={`${menuOpen ? 'active' : ''}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" onClick={() =>setMenuOpen(!menuOpen)}>
+                    <Span ></Span>
+                    <Span ></Span>
+                    <Span ></Span>
                 </Button>
 
                 <Div className="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -200,9 +204,16 @@ const Topbar = ({setMenuOpen, menuOpen}) => {
                         <Li className="nav-item">
                             <Link className="nav-link" href="#services">Services</Link>
                         </Li>
-                        <Li class="nav-item">
-                            <Link className="nav-link" href="#testimonials">Testimonials</Link>
-                        </Li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#more" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               More
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#works">Works</a></li>
+                                <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="#contact">Get In Touch</a></li>
+                            </ul>
+                        </li>
                     </Ul>
                     <Ul className="navbar-nav sec-nav">
                         <Li className="nav-item">
@@ -211,7 +222,7 @@ const Topbar = ({setMenuOpen, menuOpen}) => {
                         <Li className="nav-item">
                             <Link className="nav-link" href="#services"> <Githubicon />Github</Link>
                         </Li>
-                        
+
                         <EmailDiv className='shadow-lg'>
                             <Emailicon />
                         </EmailDiv>

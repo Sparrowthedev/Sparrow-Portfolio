@@ -268,12 +268,13 @@ padding: 5rem 0 0 0;
 width: 100%;
 height: 100%;
 background: #262525;
+overflow: hidden;
 
 `
 
 const Works = () => {
     return (
-        <Section>
+        <Section id='works'>
             <Div className='container'>
                 <Row className='row'>
                     <ColOne className='col-lg-6 col-md-6 mt-3'>

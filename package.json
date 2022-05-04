@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+   "homepage": "https://sparrowthdev.github.io/Sparrow-Portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
@@ -18,12 +19,13 @@
     "styled-components": "^5.3.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compile:sass": "sass --watch src/scss:src/css"
-
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "sass": "^1.51.0"
   }
 }

@@ -29,6 +29,7 @@ const Section = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
 
     ${Div} {
 
@@ -146,7 +147,7 @@ const Section = styled.section`
 const Hero = () => {
     return (
         <Section id='home'>
-            <Div className='container' >
+            <Div className='container'>
                 <Row className='row align-items-center' id='maxheight'>
                     <Col className='col-lg-6'>
                         <Main>

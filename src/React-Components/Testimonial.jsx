@@ -12,6 +12,7 @@ padding: 3rem 0 2rem 0;
 background: #4a4b4d;
 height: 100%;
 width: 100%;
+overflow: hidden;
 `
 const Div = styled.div``
 const Quoteicon = styled(FormatQuoteIcon)`
@@ -39,6 +40,7 @@ const SecondCol = styled.div`
 
 `
 const Card = styled.div`
+position: relative;
 background: #262525;
 width: 100%;
 width: 100%;
@@ -50,6 +52,10 @@ display: flex;
 flex-direction: column;
 gap: 10px;
 transition: all 0.3s ease; 
+
+@media (max-width: 368px){
+    margin: 25px 0;
+}
 
 &:hover{
     transform: translateY(-8px);
@@ -82,7 +88,10 @@ const Desc = styled.div`
 color:  #d4d2d2;
 font-size: 0.9em;
 font-weight: 200;
-text-align: center;
+
+@media (max-width: 368px){
+    text-align: center;
+}
 `
 const ImageDiv = styled.div`
 height: 50px;
@@ -91,6 +100,11 @@ overflow: hidden;
 border-radius: 50%;
 margin-right: 10px;
 
+@media (max-width: 368px){
+    position: absolute;
+    top: -30px;
+    border: 2px solid ${primaryColor}; 
+}
 `
 const Image = styled.img`
 width: 100%;
@@ -117,7 +131,7 @@ color:  #d4d2d2;
 
 const Testimonial = () => {
     return (
-        <Section>
+        <Section id='testimonials'>
             <Div className='container'>
                 <FirstRow className='row'>
                     <FirstCol className='col-lg-12 text-center'>
