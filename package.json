@@ -4,6 +4,7 @@
    "homepage": "https://sparrowthdev.github.io/Sparrow-Portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@testing-library/jest-dom": "^5.16.4",

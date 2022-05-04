@@ -161,12 +161,12 @@ const Nav = styled.nav`
                         }
                     }
                 ${Twittericon}{
-                    color: ${white};
+                    color: ${primaryColor};
                     margin-right: 10px;
 
                 }
                 ${Githubicon}{
-                    color: ${white};
+                    color: ${primaryColor};
                     margin-right: 10px;
                 }
 
@@ -220,12 +220,14 @@ const Topbar = ({ setMenuOpen, menuOpen }) => {
                             <Link className="nav-link" aria-current="page" href="#home"><Twittericon />Twitter</Link>
                         </Li>
                         <Li className="nav-item">
-                            <Link className="nav-link" href="#services"> <Githubicon />Github</Link>
+                            <Link className="nav-link" href="https://sparrowthedev.github.io"> <Githubicon />Github</Link>
                         </Li>
 
-                        <EmailDiv className='shadow-lg'>
+                       <Link href='mailto:fridayogwuche61@gmail.com' target='blank'>
+                       <EmailDiv className='shadow-lg'>
                             <Emailicon />
                         </EmailDiv>
+                       </Link>
                     </Ul>
                 </Div>
             </Container>

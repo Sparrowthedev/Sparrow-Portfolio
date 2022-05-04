@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { primaryColor } from '../variables';
+import emailjs from '@emailjs/browser';
 
 const Div = styled.div``
+const SpanTwo = styled.span`
+color: ${primaryColor};
+padding: 1rem;
+text-align: center;
+`
 const Left = styled.div`
 width: 20px;
 height: 100%;
@@ -63,6 +70,19 @@ overflow: hidden;
 `
 
 const Contact = () => {
+    const [done, setDone] = useState(false)
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_6o48jpi', 'template_fjdh3ps', form.current, 'JWzbpZeZhzWffvdSx')
+      .then((result) => {
+          setDone(true);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <Section id='contact'>
         <Left></Left>
@@ -83,7 +103,7 @@ const Contact = () => {
                 <SecondCol className='col-12 col-lg-6  p-3'>
                     <FormMainDiv className='w-100 pb-2'>
                         <HeadingThree className='mb-5 text-center'>Start your project</HeadingThree>
-                        <Form className='row'>
+                        <Form ref={form} onSubmit={sendEmail} className='row'>
                             <FormDiv className='mb-3 col-lg-12 col-md-6'>
                                 <FormInput type="text" placeholder="Name" name="user_name" id="inputFirstName"
                                 className="form-control shadow form-control-lg" required/>
@@ -104,6 +124,7 @@ const Contact = () => {
 
                             <FormCusDiv className='text-center col-12 d-grid mt-1'>
                                 <FormButton type="button submit" value='Send' className="btn btn-primary pt-3 pb-3">Submit</FormButton>
+                                {done && <SpanTwo>Thank you for messaging i'll get back to you soon!!</SpanTwo>}
                             </FormCusDiv>
                         </Form>
 

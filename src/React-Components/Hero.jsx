@@ -24,7 +24,8 @@ const Section = styled.section`
     padding: 10rem 0 8rem 0;
     width: 100%;
     height: 100%;
-    background: url(images/sparrow.jpeg);
+    background: black;
+    background-image: url(images/sparrow.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@ const Section = styled.section`
                     }
 
                     ${Para}{
-                        color: #6b6a68;
+                        color: ${white};
                         font-weight: 200;
                         font-size: 1.1rem;
                     }
