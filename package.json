@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-   "homepage": "https://sparrowthdev.github.io/Sparrow-Portfolio",
+  "homepage": "https://sparrowthdev.github.io/Sparrow-Portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
