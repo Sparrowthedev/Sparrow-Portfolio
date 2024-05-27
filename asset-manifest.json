@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Sparrow-Portfolio/static/css/main.04b29c26.css",
-    "main.js": "/Sparrow-Portfolio/static/js/main.ac89775c.js",
+    "main.js": "/Sparrow-Portfolio/static/js/main.df7ea484.js",
     "index.html": "/Sparrow-Portfolio/index.html",
     "main.04b29c26.css.map": "/Sparrow-Portfolio/static/css/main.04b29c26.css.map",
-    "main.ac89775c.js.map": "/Sparrow-Portfolio/static/js/main.ac89775c.js.map"
+    "main.df7ea484.js.map": "/Sparrow-Portfolio/static/js/main.df7ea484.js.map"
   },
   "entrypoints": [
     "static/css/main.04b29c26.css",
-    "static/js/main.ac89775c.js"
+    "static/js/main.df7ea484.js"
   ]
 }
