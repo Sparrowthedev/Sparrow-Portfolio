@@ -300,7 +300,7 @@ const Works = () => {
                                 </BottomMainDiv>
 
                                 <BottomImageDiv>
-                                    <ImageOne src='images/franc.png' alt='franc png' className='img-fluid' id='image'></ImageOne>
+                                    <ImageOne src={`${process.env.PUBLIC_URL}/images/franc.png`} alt='franc png' className='img-fluid' id='image'></ImageOne>
                                 </BottomImageDiv>
                             </Bottom>
                         </ColOneDiv>
@@ -319,7 +319,7 @@ const Works = () => {
                             </ColTwoMainDiv>
 
                             <ColTwoImageDiv>
-                                <ImageTwo src='images/tesla.png' className='img-fluid' alt='tesla png' id='image'></ImageTwo>
+                                <ImageTwo src={`${process.env.PUBLIC_URL}/images/tesla.png`} className='img-fluid' alt='tesla png' id='image'></ImageTwo>
                             </ColTwoImageDiv>
                         </ColTwoDiv>
                     </Fade>
@@ -348,7 +348,7 @@ const Works = () => {
 
                             
                                 <ColFourImageDiv>
-                                    <ImageThree src='images/yellow.png' alt='dark png' className='img-fluid' id='image'></ImageThree>
+                                    <ImageThree src={`${process.env.PUBLIC_URL}/images/yellow.png`} alt='dark png' className='img-fluid' id='image'></ImageThree>
                                 </ColFourImageDiv>
                         </ColFourMainDiv>
 

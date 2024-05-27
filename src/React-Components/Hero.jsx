@@ -25,7 +25,7 @@ const Section = styled.section`
     width: 100%;
     height: 100%;
     background: black;
-    background-image: url(images/sparrow.jpeg);
+    background-image: url(${process.env.PUBLIC_URL}/images/sparrow.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,7 +152,7 @@ const Hero = () => {
                     <Col className='col-lg-6'>
                         <Main>
                            <Fade top>
-                           <Button className='btn btn-primary p-2'>Front-End Developer</Button>
+                           <Button className='btn btn-primary p-2'>Full-Stack Developer</Button>
                            </Fade>
 
                             <Fade left><MainTitle id='title'>Talk is cheap. show me the code</MainTitle></Fade>
@@ -166,16 +166,16 @@ const Hero = () => {
 
             <SecDiv className='sec-div'>
                 <ExpressDiv>
-                    <Image src='images/express.png' alt='express png' className='img-fluid' />
+                    <Image src={`${process.env.PUBLIC_URL}/images/express.png`} alt='express png' className='img-fluid' />
                 </ExpressDiv>
                 <MongoDiv>
-                    <Image src='images/mongodb.png' alt='express png' className='img-fluid' />
+                    <Image src={`${process.env.PUBLIC_URL}/images/mongodb.png`} alt='express png' className='img-fluid' />
                 </MongoDiv>
                 <ReactDiv>
-                    <Image src='images/react.png' alt='express png' className='img-fluid' />
+                    <Image src={`${process.env.PUBLIC_URL}/images/react.png`} alt='express png' className='img-fluid' />
                 </ReactDiv>
                 <NodeDiv>
-                    <Image src='images/nodejs.png' alt='express png' className='img-fluid' />
+                    <Image src={`${process.env.PUBLIC_URL}/images/nodejs.png`} alt='express png' className='img-fluid' />
                 </NodeDiv>
                 <Dot></Dot>
             </SecDiv>

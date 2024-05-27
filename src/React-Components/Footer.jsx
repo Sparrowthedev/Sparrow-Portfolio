@@ -52,6 +52,7 @@ color: ${primaryColor};
 `
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
   return (
     <Section>
         <Div className='container'>
@@ -63,7 +64,7 @@ const Footer = () => {
                 </NameCol>
                 <CopyrightCol className='col-lg-4 p-3'>
                    <CopyrightDiv>
-                   <Copyrighticon /> 2022 All Rights Reserved
+                   <Copyrighticon /> {currentYear} All Rights Reserved
                    </CopyrightDiv>
                 </CopyrightCol>
                 <SocialCol className='col-lg-4  p-3'>

@@ -125,14 +125,12 @@ const Services = () => {
                                     <Span>Design</Span>
                                 </MainTitle>
                                 <Para>Create digital products with unique ideas.</Para>
-                                <Link href='#'>20 Projects</Link>
                             </Card>
                            <Card className='p-4' id='card'>
                                 <MainTitle>
                                     <Span>Full-Stack</Span>
                                 </MainTitle>
                                 <Para>I develop seemlessly beautiful full-stack web applications</Para>
-                                <Link href='#'>10 Projects</Link>
                             </Card>
                            </Fade>
                            <Fade left>
@@ -141,7 +139,6 @@ const Services = () => {
                                     <Head>Front-End</Head> <Codeicon />
                                 </MainTitle>
                                 <Para>I develop Front-End with coding super smooth.</Para>
-                                <Link href='#'>25 Projects</Link>
                             </Card>
                            </Fade>
                             <Fade right>
@@ -150,7 +147,6 @@ const Services = () => {
                                     <Head>SEO</Head> <Searchicon />
                                 </MainTitle>
                                 <Para>Boost your buisness with SEO optimize.</Para>
-                                <Link href='#'>10 Projects</Link>
                             </Card>
                             </Fade>
                         </Main>
