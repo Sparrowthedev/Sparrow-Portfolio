@@ -15,7 +15,9 @@ const ExpressDiv = styled.div``
 const Row = styled.div``
 const Col = styled.div``
 const Main = styled.div``
-const Button = styled.button``
+const Button = styled.button`
+font-weight: bold;
+`
 const MainTitle = styled.h3``
 const Para = styled.p``
 const MainLink = styled.a``

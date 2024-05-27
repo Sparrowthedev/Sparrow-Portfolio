@@ -157,7 +157,7 @@ const Services = () => {
                             <ParaSec>Introduce</ParaSec>
                             <SecTitle>Hello! I'm Sparrow.</SecTitle>
                             <Italic>Every project begin with an even better story.</Italic>
-                            <ParaMain id='para'>Since beginning my journey as a freelance designer 2 years ago, I've done remote work for agencies, consulted
+                            <ParaMain id='para'>Since beginning my journey as a freelance designer 4 years ago, I've done remote work for agencies, consulted
                              for startups, and collaborated with talented people to create single and multi-page
                               web apps for both private and public enterprises. I'm quite confident, naturally 
                               curios, and perpetually working on improving my chopsone design problem at a time.

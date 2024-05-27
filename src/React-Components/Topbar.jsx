@@ -217,10 +217,10 @@ const Topbar = ({ setMenuOpen, menuOpen }) => {
                     </Ul>
                     <Ul className="navbar-nav sec-nav">
                         <Li className="nav-item">
-                            <Link className="nav-link" aria-current="page" href="#home"><Twittericon />Twitter</Link>
+                            <Link className="nav-link" aria-current="page" href="https://twitter.com/Sparrowthe_dev"><Twittericon />Twitter</Link>
                         </Li>
                         <Li className="nav-item">
-                            <Link className="nav-link" href="https://sparrowthedev.github.io"> <Githubicon />Github</Link>
+                            <Link className="nav-link" href="https://github.com/Sparrowthedev"> <Githubicon />Github</Link>
                         </Li>
 
                        <Link href='mailto:sparrowthedev@gmail.com' target='blank'>
