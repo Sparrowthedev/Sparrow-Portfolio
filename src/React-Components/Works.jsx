@@ -240,6 +240,7 @@ const Right = styled.div`
 
 const TitleSec = styled.h2`
   color: #d6d6d6;
+  margin: 0;
 `;
 const TitleSecMain = styled.h2`
   color: ${primaryColor};
