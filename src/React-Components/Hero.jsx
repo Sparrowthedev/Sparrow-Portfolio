@@ -160,7 +160,7 @@ const Hero = () => {
                             <Fade left><MainTitle id='title'>Talk is cheap. show me the code</MainTitle></Fade>
                             <Fade right><Para>I design and code beautiful simple things, and i love what i do.</Para></Fade>
 
-                            <Fade bottom><MainLink href='#'>Let's Chat</MainLink></Fade>
+                            <Fade bottom><MainLink href='#contact'>Let's Chat</MainLink></Fade>
                         </Main>
                     </Col>
                 </Row>
