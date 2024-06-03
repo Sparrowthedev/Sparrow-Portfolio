@@ -86,7 +86,7 @@ const Contact = () => {
     };
 
     // Sending data to the server
-    fetch("http://localhost:5000/apiv1/send-email", {
+    fetch("https://portfolio-email-backend-v5wo.onrender.com/apiv1/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
