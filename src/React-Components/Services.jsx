@@ -154,7 +154,7 @@ const Services = () => {
                     <Col className='col-lg-6'>
                        <Fade bottom>
                        <Secondary id='secondary'>
-                            <ParaSec>Introduce</ParaSec>
+                            <ParaSec>Introduction</ParaSec>
                             <SecTitle>Hello! I'm Sparrow.</SecTitle>
                             <Italic>Every project begin with an even better story.</Italic>
                             <ParaMain id='para'>Since beginning my journey as a freelance designer 4 years ago, I've done remote work for agencies, consulted
